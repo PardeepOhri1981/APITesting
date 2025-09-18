@@ -27,11 +27,11 @@ public class UnitTests
     [Test]
     public void Patch_UpdateName_ShouldReturn200()
     {
-        Console.WriteLine("Hello Debugging");
-        var payload = new { name = "Updated Name" };
+        //Console.WriteLine("Hello Debugging");
+        var payload = new { name = "Updated Name 1" };
         var jsonBody = JsonConvert.SerializeObject(payload);
         //var request = new RestRequest("")
-        var request = new RestRequest("/objects/7", Method.Post);
+        var request = new RestRequest("/objects/7", Method.Patch);
         //request.AddJsonBody(new { name = "Updated Name 1" });
         request.AddStringBody(jsonBody, DataFormat.Json);
 
@@ -41,16 +41,16 @@ public class UnitTests
         Console.WriteLine($"{request.Method} {client.BuildUri(request)}");
         foreach (var header in request.Parameters.Where(p => p.Type == ParameterType.HttpHeader))
         {
-            Console.WriteLine($"{header.Name}: {header.Value}");
+           //// Console.WriteLine($"{header.Name}: {header.Value}");
         }
-        Console.WriteLine();
-        Console.WriteLine("Request Body: " + jsonBody);
-        Console.WriteLine("------------------------");
+      //  Console.WriteLine();
+       // Console.WriteLine("Request Body: " + jsonBody);
+      //  Console.WriteLine("------------------------");
 
         // Send request
         RestResponse response = client.Execute(request);
-        Console.WriteLine("Response Status Code: " + response.StatusCode);
-        Console.WriteLine("Response Content: " + response.Content);
+      //  Console.WriteLine("Response Status Code: " + response.StatusCode);
+        //Console.WriteLine("Response Content: " + response.Content);
         Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
         Assert.IsTrue(response.Content != null && response.Content.Contains("Updated Name 1"));
     }
