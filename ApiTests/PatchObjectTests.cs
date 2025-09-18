@@ -106,7 +106,7 @@ namespace ApiTests
         }
 
         [Test]
-        public void TC0ff8081819782e69e01995abea5e51ca2_InvalidJsonFormat_ShouldReturn400()
+        public void TC07_InvalidJsonFormat_ShouldReturn400()
         {
             var request = new RestRequest("/objects/ff8081819782e69e01995abea5e51ca2", Method.Patch);
             request.AddStringBody("{ name: MissingQuotes }", DataFormat.Json);
