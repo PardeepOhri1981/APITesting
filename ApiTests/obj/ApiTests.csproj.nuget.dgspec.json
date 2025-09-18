@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\APITesting\\ApiTests\\ApiTests.csproj": {}
+    "D:\\APITesting\\APITests\\ApiTests.csproj": {}
   },
   "projects": {
-    "D:\\APITesting\\ApiTests\\ApiTests.csproj": {
+    "D:\\APITesting\\APITests\\ApiTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\APITesting\\ApiTests\\ApiTests.csproj",
+        "projectUniqueName": "D:\\APITesting\\APITests\\ApiTests.csproj",
         "projectName": "ApiTests",
-        "projectPath": "D:\\APITesting\\ApiTests\\ApiTests.csproj",
+        "projectPath": "D:\\APITesting\\APITests\\ApiTests.csproj",
         "packagesPath": "C:\\Users\\parde\\.nuget\\packages\\",
-        "outputPath": "D:\\APITesting\\ApiTests\\obj\\",
+        "outputPath": "D:\\APITesting\\APITests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\parde\\AppData\\Roaming\\NuGet\\NuGet.Config"
