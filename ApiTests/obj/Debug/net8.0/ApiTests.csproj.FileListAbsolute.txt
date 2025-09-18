@@ -98,3 +98,4 @@ D:\APITesting\APITests\obj\Debug\net8.0\refint\ApiTests.dll
 D:\APITesting\APITests\obj\Debug\net8.0\ApiTests.pdb
 D:\APITesting\APITests\obj\Debug\net8.0\ApiTests.genruntimeconfig.cache
 D:\APITesting\APITests\obj\Debug\net8.0\ref\ApiTests.dll
+d:\APITesting\ApiTests\obj\Debug\net8.0\ApiTests.sourcelink.json
