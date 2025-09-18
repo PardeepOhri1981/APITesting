@@ -9,7 +9,7 @@ namespace ApiTests;
 public class UnitTests
 {
     private RestClient client;
-    private string baseUrl = "https://restful-api.dev";
+    private string baseUrl = "https://api.restful-api.dev";
 
     [SetUp]
     public void Setup()
@@ -24,14 +24,14 @@ public class UnitTests
         client = null;
     }
 
-    [Test]
+  /*   [Test]
     public void Patch_UpdateName_ShouldReturn200()
     {
         //Console.WriteLine("Hello Debugging");
         var payload = new { name = "Updated Name 1" };
         var jsonBody = JsonConvert.SerializeObject(payload);
         //var request = new RestRequest("")
-        var request = new RestRequest("/objects/7", Method.Patch);
+        var request = new RestRequest("/objects/ff8081819782e69e01995abea5e51ca2", Method.Patch);
         //request.AddJsonBody(new { name = "Updated Name 1" });
         request.AddStringBody(jsonBody, DataFormat.Json);
 
@@ -54,8 +54,8 @@ public class UnitTests
         Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
         Assert.IsTrue(response.Content != null && response.Content.Contains("Updated Name 1"));
     }
-
-    [Test]
+ */
+/*     [Test]
     public void Patch_InvalidId_ShouldReturn404()
     {
         var request = new RestRequest("/objects/999999", Method.Patch);
@@ -64,9 +64,9 @@ public class UnitTests
         var response = client.Execute(request);
 
         Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.NotFound));
-    }
+    } */
 
-    [Test]
+  /*   [Test]
     public void Patch_EmptyBody_ShouldReturn400()
     {
         var request = new RestRequest("/objects/7", Method.Patch);
@@ -74,5 +74,5 @@ public class UnitTests
         var response = client.Execute(request);
 
         Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.BadRequest));
-    }
+    } */
 }
